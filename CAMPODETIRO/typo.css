@@ -1,0 +1,15 @@
+.second_section_button {
+      color: #ef4723;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 295px);
+      padding: 25px 30px;
+      margin: 40px 0;
+      font-size: 24px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: 0.5s;
+      letter-spacing: 2.5px;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear</title>
+</head>
+<body>
+{% block content %}
+<form method="post">
+    <label>Username</label>
+    <input name="username" required> <!-- Es super importante poner el atributo de name porque con esto lo vamos a poder referenciar en python -->
+    <label>Email</label>
+    <input name="email" required>
+    <label>Edad</label>
+    <input name="edad" required>
+    <input type="submit" value="Guardar" />
+</form>
+{% endblock %}
+</body>
+</html>

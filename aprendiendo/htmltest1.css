@@ -1,0 +1,73 @@
+.nav_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.nav_gradient {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 9px;
+  z-index: 10;
+  background: linear-gradient(90deg, #717FFF 0%, rgba(68, 210, 255, 0.88) 16.64%, rgba(238, 203, 255, 0.72) 32.02%, rgba(255, 255, 255, 0.01) 50.36%, rgba(238, 203, 255, 0.72) 66.6%, rgba(68, 210, 255, 0.88) 83.96%, #717FFF 100%);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  padding: 15px;
+  padding-top: 15px;
+  position: relative;
+}
+
+li {
+  float: left;
+}
+
+li:nth-last-child(1) {
+  float: none;
+  display: inline-block;
+  padding-right: 20px;
+}
+#home {
+  content: '';
+  display: block;
+  height: 9px;
+  background: radial-gradient(50% 530.72% at 50% 50%, rgba(92, 108, 255, 0.94492) 0%, rgba(68, 210, 255, 0.88) 23.83%, rgba(238, 203, 255, 0.72) 41.81%, rgba(255, 255, 255, 0.01) 100%);
+  position: relative;
+  top: 0px;
+  opacity: 100%;
+}
+#home::after {
+  top: 7px;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 9px;
+  background: radial-gradient(50% 530.72% at 50% 50%, rgba(92, 108, 255, 0.94492) 0%, rgba(68, 210, 255, 0.88) 23.83%, rgba(238, 203, 255, 0.72) 41.81%, rgba(255, 255, 255, 0.01) 100%);
+  position: relative;
+  top: 35px;
+  opacity: 0%;
+  transition: all ease-in-out 450ms;
+}
+
+nav a:hover::before {
+  opacity: 60%;
+}

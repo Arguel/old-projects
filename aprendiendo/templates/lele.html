@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soy lele</title>
+</head>
+<body>
+<h1>Soy lele xd</h1>
+<!--<ul>-->
+<!--    {% for usuario in usuarios %}   &lt;!&ndash; Para ejecutar comandos de python? creo &ndash;&gt;-->
+<!--        <li>{{usuario[2]}}</li> &lt;!&ndash; Aca cada usuario devuelve una tupla , y si no mal entiendo usuarios es una lista de tuplas &ndash;&gt;-->
+<!--    {% endfor %}    &lt;!&ndash; Para cerrar nuestro loop for &ndash;&gt;-->
+<!--</ul>-->
+
+<ul>
+    {% for usuario in usuarios %}   <!-- Para ejecutar comandos de python? creo -->
+<!--        <li>{{usuario.username}}</li> &lt;!&ndash; Aca cada usuario devuelve una tupla , y si no mal entiendo usuarios es una lista de tuplas &ndash;&gt;-->
+        <li>{{usuario['username']}}</li>    <!-- se puede usar este o el otro metodo del renglon de arriba -->
+    {% endfor %}    <!-- Para cerrar nuestro loop for -->
+</ul>
+</body>
+</html>
